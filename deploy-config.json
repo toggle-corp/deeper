@@ -1,6 +1,6 @@
 {
     "client": {
-        "deploy": true,
+        "deploy": false,
         "client": "rc-v1.3.6",
         "reactStore": "rc-v1.3.4",
         "reactComponents": "master",
