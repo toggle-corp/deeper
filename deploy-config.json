@@ -1,7 +1,7 @@
 {
     "client": {
         "deploy": true,
-        "client": "release-v1.3.6",
+        "client": "rc-v1.3.7",
         "reactStore": "release-v1.3.4",
         "reactComponents": "master",
         "ravl": "alpha"
