@@ -1,13 +1,13 @@
 {
     "client": {
-        "deploy": false,
-        "client": "rc-v1.3.7",
-        "reactStore": "release-v1.3.4",
+        "deploy": true,
+        "client": "rc-v1.3.8",
+        "reactStore": "rc-v1.3.5",
         "reactComponents": "master",
         "ravl": "alpha"
     },
     "server": {
         "deploy": true,
-        "server": "rc-v1.3.8"
+        "server": "rc-v1.3.9"
     }
 }
