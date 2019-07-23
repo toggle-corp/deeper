@@ -1,7 +1,7 @@
 {
     "client": {
         "deploy": true,
-        "client": "release-v1.3.10",
+        "client": "release-v1.3.11",
         "reactStore": "release-v1.3.7"
     },
 
