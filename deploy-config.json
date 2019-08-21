@@ -1,8 +1,8 @@
 {
     "client": {
-        "deploy": true,
-        "client": "rc-v1.3.15",
-        "reactStore": "rc-v1.3.11",
+        "deploy": false,
+        "client": "release-v1.3.15",
+        "reactStore": "release-v1.3.11",
         "reactComponents": "master",
         "ravl": "alpha"
     },
