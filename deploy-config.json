@@ -1,13 +1,13 @@
 {
     "client": {
         "deploy": true,
-        "client": "release-v1.3.19",
-        "reactStore": "release-v1.3.12",
+        "client": "fix/change-entry-comment-icon",
+        "reactStore": "rc-v1.3.12",
         "reactComponents": "master",
         "ravl": "alpha"
     },
     "server": {
-        "deploy": true,
+        "deploy": false,
         "server": "rc-v1.3.20"
     }
 }
