@@ -1,15 +1,14 @@
 {
     "client": {
         "deploy": true,
-        "client": "develop",
+        "client": "feature/questionnaire-builder",
         "reactStore": "develop",
-        "ravl": "master",
 
         "reactStoreRepo": "https://github.com/toggle-corp/react-store",
-        "ravlRepo": "https://github.com/toggle-corp/ravl"
+        "reMap": "develop"
     },
     "server": {
         "deploy": true,
-        "server": "develop"
+        "server": "feature/questionnaire-builder"
     }
 }
