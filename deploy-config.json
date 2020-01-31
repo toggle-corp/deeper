@@ -2,11 +2,11 @@
     "client": {
         "deploy": true,
         "client": "rc-v1.3.32",
-        "reactStore": "rc-v1.3.20",
+        "reactStore": "rc-v1.3.21",
         "reMap": "develop"
     },
     "server": {
-        "deploy": false,
-        "server": "rc-v1.3.30"
+        "deploy": true,
+        "server": "rc-v1.3.31"
     }
 }
