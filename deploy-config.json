@@ -6,7 +6,7 @@
         "reMap": "develop"
     },
     "server": {
-        "deploy": false,
-        "server": "rc-v1.3.31"
+        "deploy": true,
+        "server": "release-v1.3.31"
     }
 }
