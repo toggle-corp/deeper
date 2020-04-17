@@ -7,6 +7,6 @@
     },
     "server": {
         "deploy": true,
-        "server": "rc-v1.4.5"
+        "server": "rc-v1.4.6"
     }
 }
