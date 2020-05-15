@@ -3,11 +3,11 @@
         "deploy": false,
         "client": "release-v1.4.5",
         "reactStore": "release-v1.4.2",
-        "reMap": "develop"
+        "reMap": "release-deep"
     },
 
     "server": {
-        "deploy": true,
+        "deploy": false,
         "server": "release-v1.4.8"
     }
 }
