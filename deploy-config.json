@@ -1,9 +1,9 @@
 {
     "client": {
-        "deploy": false,
-        "client": "release-v1.4.5",
-        "reactStore": "release-v1.4.2",
-        "reMap": "release-deep"
+        "deploy": true,
+        "client": "release-v1.4.6",
+        "reactStore": "release-v1.4.3",
+        "reMap": "develop"
     },
 
     "server": {
