@@ -3,10 +3,10 @@
         "deploy": true,
         "client": "rc-v1.4.8",
         "reactStore": "rc-v1.4.5",
-        "reMap": "rc-v1.1.0"
+        "reMap": "release-v1.0.0"
     },
     "server": {
-        "deploy": false,
+        "deploy": true,
         "server": "rc-v1.4.9"
     }
 }
