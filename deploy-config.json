@@ -1,7 +1,7 @@
 {
     "client": {
         "deploy": true,
-        "client": "release-v1.4.13",
+        "client": "release-v1.4.14",
         "reactStore": "release-v1.4.7",
         "reMap": "release-v1.1.0"
     },
