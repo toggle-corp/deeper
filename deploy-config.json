@@ -1,13 +1,12 @@
 {
     "client": {
         "deploy": true,
-        "client": "release-v1.4.14",
-        "reactStore": "release-v1.4.7",
-        "reMap": "release-v1.1.0"
+        "client": "release-v1.4.15",
+        "reactStore": "release-v1.4.7"
     },
 
     "server": {
-        "deploy": false,
-        "server": "release-v1.4.12"
+        "deploy": true,
+        "server": "release-v1.4.13"
     }
 }
