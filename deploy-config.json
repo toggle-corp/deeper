@@ -1,11 +1,11 @@
 {
     "client": {
         "deploy": true,
-        "client": "rc-v1.4.17",
+        "client": "feature/update-google-drive-keys",
         "reactStore": "release-v1.4.7"
     },
     "server": {
-        "deploy": true,
+        "deploy": false,
         "server": "rc-v1.4.14"
     }
 }
