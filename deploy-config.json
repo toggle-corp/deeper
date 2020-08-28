@@ -9,6 +9,6 @@
     },
     "server": {
         "deploy": true,
-        "server": "develop"
+        "server": "feature/ec2-role"
     }
 }
