@@ -1,14 +1,13 @@
 {
     "client": {
         "deploy": true,
-        "client": "develop",
+        "client": "project/unified-connectors",
         "reactStore": "develop",
 
         "reactStoreRepo": "https://github.com/toggle-corp/react-store",
         "reMap": "develop"
     },
     "server": {
-        "deploy": true,
-        "server": "feature/ec2-role"
+        "deploy": false
     }
 }
