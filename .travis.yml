@@ -11,8 +11,11 @@ before_install:
     - sudo apt-get remove python3-pip
     - sudo apt-get install python3-pip python3-setuptools python3-wheel
     - sudo pip3 install -U setuptools
-    - pip3 install --user --upgrade awscli
-    - pip3 install --user --upgrade awsebcli
+    - sudo pip3 install --upgrade pip
+    - sudo pip3 install --ignore-installed PyYAML
+    - pip3 install jsonschema==3.0.2
+    - sudo pip3 install --upgrade awscli
+    - sudo pip3 install awsebcli==3.19.2
     - eb --version
 
     - pip3 install jsonschema==3.0.2
