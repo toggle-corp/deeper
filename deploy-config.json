@@ -1,7 +1,7 @@
 {
     "client": {
         "deploy": true,
-        "client": "rc-v1.4.31",
+        "client": "fix/recaptcha-reset",
         "reactStore": "rc-v1.4.15"
     },
     "server": {
