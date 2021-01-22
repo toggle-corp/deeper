@@ -10,7 +10,7 @@ before_install:
     - curl -L https://github.com/mikefarah/yq/releases/download/3.3.2/yq_linux_amd64 > yq && chmod +x yq && sudo cp yq /usr/bin/
     - sudo apt-get remove python3-pip
     - sudo apt-get install python3-pip python3-setuptools python3-wheel
-    - sudo pip3 install -U setuptools
+    - sudo pip3 install -U setuptools==50.3.2
     - sudo pip3 install --upgrade pip
     - sudo pip3 install --ignore-installed PyYAML
     - pip3 install jsonschema==3.0.2
