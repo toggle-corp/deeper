@@ -17,6 +17,18 @@
             ]
         },
         {
+            "Sid": "KMSAccess",
+            "Action": [
+                "kms:Decrypt",
+                "kms:DescribeKey",
+                "kms:Encrypt",
+                "kms:GenerateDataKey*",
+                "kms:ReEncrypt*"
+            ],
+            "Effect": "Allow",
+            "Resource": "arn:aws:kms:us-east-1:XXXXXXXXXXXX:key/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        },
+        {
             "Sid": "SimpleEmailServiceAccess",
             "Action": [
                 "ses:GetSendQuota",
@@ -36,6 +48,33 @@
             ],
             "Effect": "Allow",
             "Resource": "*"
+        },
+        {
+            "Sid": "LamdaInvokeFunctionAccess",
+            "Effect": "Allow",
+            "Action": "lambda:InvokeFunction",
+            "Resource": "arn:aws:lambda:us-east-1:519887312542:function:deep-util-services-XXXXXXX-sourceExtract"
+        },
+        {
+            "Sid": "ElasticSearchAccess",
+            "Action": [
+                "es:*"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        },
+        {
+            "Sid": "DynamodbAcess",
+            "Action": [
+                "dynamodb:Query",
+                "dynamodb:Scan",
+                "dynamodb:GetItem",
+                "dynamodb:DescribeTable"
+            ],
+            "Resource": [
+                "arn:aws:dynamodb:us-east-1:*:table/deep-util-services-XXXXXXX-sources"
+            ],
+            "Effect": "Allow"
         }
     ]
 }

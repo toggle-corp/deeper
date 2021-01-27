@@ -6,21 +6,39 @@
     },
     "containerDefinitions": [
         {
-            "name": "deeper-celery",
+            "name": "deeper-celery-default",
+            "image": "DOCKER_IMAGE:DOCKER_TAG",
+            "essential": true,
+            "memoryReservation": 500,
+            "environment": [
+                {"name": "WORKER_TYPE", "value": "celery"},
+                {"name": "CELERY_QUEUE_CONCURRENCY", "value": "5"},
+                {"name": "CELERY_QUEUE_TYPE", "value": "default"}
+            ]
+        },
+        {
+            "name": "deeper-celery-heavy",
+            "image": "DOCKER_IMAGE:DOCKER_TAG",
+            "essential": true,
+            "memoryReservation": 500,
+            "environment": [
+                {"name": "WORKER_TYPE", "value": "celery"},
+                {"name": "CELERY_QUEUE_CONCURRENCY", "value": "2"},
+                {"name": "CELERY_QUEUE_TYPE", "value": "heavy"}
+            ]
+        },
+        {
+            "name": "deeper-celery-cronjob",
             "image": "DOCKER_IMAGE:DOCKER_TAG",
             "essential": true,
             "memoryReservation": 500,
             "portMappings": [
-                {
-                    "hostPort": 80,
-                    "containerPort": 80
-                }
+                {"hostPort": 80, "containerPort": 80}
             ],
             "environment": [
-                {
-                    "name": "WORKER_TYPE",
-                    "value": "celery"
-                }
+                {"name": "WORKER_TYPE", "value": "celery"},
+                {"name": "CELERY_QUEUE_CONCURRENCY", "value": "1"},
+                {"name": "CELERY_QUEUE_TYPE", "value": "cronjob"}
             ]
         }
     ]
