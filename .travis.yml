@@ -5,20 +5,22 @@ os: linux
 services:
     - docker
 
-before_install:
-    - sudo apt-get install jq
-    - curl -L https://github.com/mikefarah/yq/releases/download/3.3.2/yq_linux_amd64 > yq && chmod +x yq && sudo cp yq /usr/bin/
-    - sudo apt-get remove python3-pip
-    - sudo apt-get install python3-pip python3-setuptools python3-wheel
-    - sudo pip3 install -U setuptools
-    - sudo pip3 install --upgrade pip
-    - sudo pip3 install --ignore-installed PyYAML
-    - pip3 install jsonschema==3.0.2
-    - sudo pip3 install --upgrade awscli
-    - sudo pip3 install awsebcli==3.19.2
-    - eb --version
+addons:
+  apt:
+    sources:
+    - deadsnakes
 
-    - pip3 install jsonschema==3.0.2
+before_install:
+    - |
+      curl -L https://github.com/mikefarah/yq/releases/download/3.3.2/yq_linux_amd64 > yq \
+      && chmod +x yq \
+      && sudo cp yq /usr/bin/
+    - sudo apt-get remove python3 python3-pip && sudo apt autoremove
+    - sudo apt-get install python3.7 python3-pip python3-setuptools python3-wheel jq
+    - sudo python3.7 -m pip install --upgrade pip
+    - sudo python3.7 -m pip install --upgrade awscli
+    - sudo python3.7 -m pip install --upgrade awsebcli
+    - eb --version && yq --version && jq --version
 
     - touch .env
     - rm docker-compose.yml
