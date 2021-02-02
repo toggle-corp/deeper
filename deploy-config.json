@@ -1,6 +1,6 @@
 {
     "client": {
-        "deploy": true,
+        "deploy": false,
         "client": "project/home-screen",
         "reactStore": "rc-v1.4.16"
     },
