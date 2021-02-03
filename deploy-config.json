@@ -1,11 +1,11 @@
 {
     "client": {
         "deploy": true,
-        "client": "rc-v1.4.32",
+        "client": "project/home-screen",
         "reactStore": "rc-v1.4.16"
     },
     "server": {
-        "deploy": true,
+        "deploy": false,
         "server": "feature/projects-summary"
     }
 }
