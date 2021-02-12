@@ -5,7 +5,7 @@
         "reactStore": "rc-v1.4.16"
     },
     "server": {
-        "deploy": true,
+        "deploy": false,
         "server": "release-v1.4.28"
     }
 }
