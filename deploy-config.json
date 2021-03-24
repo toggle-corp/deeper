@@ -1,11 +1,11 @@
 {
     "client": {
         "deploy": true,
-        "client": "feature/entry-review-modal",
-        "reactStore": "rc-v1.4.17"
+        "client": "release-v1.4.37",
+        "reactStore": "release-v1.4.16"
     },
     "server": {
         "deploy": true,
-        "server": "feature/entry-comment-revamp"
+        "server": "rc-v1.4.33"
     }
 }
