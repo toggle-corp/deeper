@@ -1,11 +1,11 @@
 {
     "client": {
         "deploy": true,
-        "client": "release-v1.4.39",
+        "client": "feature/entries-in-analysis-module",
         "reactStore": "release-v1.4.17"
     },
     "server": {
-        "deploy": true,
+        "deploy": false,
         "server": "rc-v1.4.35"
     }
 }
