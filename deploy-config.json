@@ -1,11 +1,11 @@
 {
     "client": {
         "deploy": true,
-        "client": "rc-v1.4.42",
+        "client": "feature/use-new-image-api",
         "reactStore": "release-v1.4.17"
     },
     "server": {
         "deploy": false,
-        "server": "rc-v1.4.37"
+        "server": "feature/entry-image-fix"
     }
 }
