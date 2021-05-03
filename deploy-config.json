@@ -2,7 +2,7 @@
     "client": {
         "deploy": true,
         "client": "feature/use-new-image-api",
-        "reactStore": "release-v1.4.17"
+        "reactStore": "rc-v1.3.22"
     },
     "server": {
         "deploy": false,
