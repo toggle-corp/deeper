@@ -29,7 +29,7 @@ script:
     - ./deploy/scripts/travis_test.sh
 
 after_success:
-    - ./deploy/scripts/travis_deploy.sh
+    - travis_wait 30 ./deploy/scripts/travis_deploy.sh
 
 notifications:
   slack:
