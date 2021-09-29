@@ -7,6 +7,6 @@
 
     "server": {
         "deploy": true,
-        "server": "release-v1.5.4"
+        "server": "release-v1.5.5"
     }
 }
