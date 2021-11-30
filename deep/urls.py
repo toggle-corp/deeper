@@ -189,6 +189,12 @@ from django.conf.urls import (
     # handler403, handler400, handler500
 )
 
+from nlp.views import (
+    ModelInfoViewSet,
+    ModelPredictionViewSet,
+    ReviewTagViewSet,
+)
+
 register_converter(converters.FileNameRegex, 'filename')
 
 
@@ -371,6 +377,10 @@ router.register(r'languages', LanguageViewSet, basename='language')
 # Page routers
 router.register(r'pages', PageViewSet, basename='page')
 
+# Nlp routers
+router.register(r'model-infos', ModelInfoViewSet, basename='model-info')
+router.register(r'model-predictions', ModelPredictionViewSet, basename='model-prediction')
+router.register(r'missing-tags', ReviewTagViewSet, basename='missing-tag')
 
 # Versioning : (v1|v2|v3)
 

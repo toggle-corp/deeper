@@ -76,6 +76,7 @@ LOCAL_APPS = [
     'client_page_meta',
     'questionnaire',
     'quality_assurance',
+    'nlp',
 
     # MISC DEEP APPS
     'bulk_data_migration',
@@ -739,3 +740,10 @@ GRAPHENE_DJANGO_EXTRAS = {
 
 if DEEP_ENVIRONMENT in ['production']:
     GRAPHENE['MIDDLEWARE'].append('deep.middleware.DisableIntrospectionSchemaMiddleware')
+
+EXTRACTOR_URL = os.environ.get(
+    'EXTRACTOR_URL', 'http://extractor:8001'
+)
+MODEL_PREDICTION_CALLBACK_URL = os.environ.get(
+    'MODEL_PREDICTION_CALLBACK_URL', 'http://server:8000/api/v1/model-predictions/model-predict-callback/'
+)
